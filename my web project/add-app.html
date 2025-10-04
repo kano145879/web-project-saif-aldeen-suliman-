@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة تطبيق - تطبيقات الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">الرئيسية</a></li>
+                <li><a href="aboutus.html">من نحن</a></li>
+                <li><a href="apps.html">التطبيقات</a></li>
+                <li><a href="add_app.html">إضافة تطبيق</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="add-app-hero">
+            <h1>إضافة تطبيق جديد</h1>
+            <p>أضف معلومات عن تطبيق ذكاء اصطناعي جديد</p>
+        </section>
+
+        <section class="add-app-form">
+            <form id="appForm">
+                <div class="form-group">
+                    <label for="appName">اسم التطبيق *</label>
+                    <input type="text" id="appName" name="appName" required>
+                    <small>أحرف هجائية فقط باللغة الإنكليزية بدون فراغات</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="companyName">الشركة المصنعة *</label>
+                    <input type="text" id="companyName" name="companyName" required>
+                    <small>أحرف هجائية فقط باللغة الإنكليزية</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="website">الموقع الالكتروني *</label>
+                    <input type="url" id="website" name="website" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="isFree">مجاني ام لا *</label>
+                    <select id="isFree" name="isFree" required>
+                        <option value="">اختر...</option>
+                        <option value="مجاني">مجاني</option>
+                        <option value="غير مجاني">غير مجاني</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="usageField">مجال الاستخدام *</label>
+                    <select id="usageField" name="usageField" required>
+                        <option value="">اختر...</option>
+                        <option value="Education">Education</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Finance">Finance</option>
+                        <option value="E-Commerce">E-Commerce</option>
+                        <option value="Robotics">Robotics</option>
+                        <option value="Entertainment">Entertainment</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">شرح مختصر عن التطبيق *</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="appLogo">صورة الشعار (اختياري)</label>
+                    <input type="file" id="appLogo" name="appLogo" accept="image/*">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="submitBtn">إرسال</button>
+                    <button type="reset" id="resetBtn">إعادة</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 موقع تطبيقات الذكاء الاصطناعي. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+</body>
+</html>
